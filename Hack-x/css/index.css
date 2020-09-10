@@ -3,16 +3,21 @@
   }
   
   body {
+    height: 100vh;
     margin: 0px;
     font-family: 'segoe ui';
-    background-color: rgb(12, 12, 12);
+    display: flex;
+    overflow: hidden;
+    background-color: #2b4162;
+	  background-image: linear-gradient(315deg, #3b0c26 0%, #12100e 74%);
   }
   
   .nav {
     height: 50px;
     width: 100%;
-    background-color: #000000;
+    background-color: transparent;
     position: relative;
+    
 
   }
   
@@ -33,7 +38,7 @@
   
   .nav > .nav-links {
     display: inline;
-    float:right;
+    float: right;
     font-size: 18px;
     margin-right:100px ;
   }
@@ -98,3 +103,4 @@
       overflow-y: auto;
     }
   }
+  
