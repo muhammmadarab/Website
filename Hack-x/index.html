@@ -1,34 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack-X Club</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" type="image/ico" href="media/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack-X Club</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="shortcut icon" type="image/ico" href="media/favicon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/bbbeb21210.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            <a href="#"><img src="media/favicon.png" height="30px" width="30px"></a>
+  <nav class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="#"><img src="media/favicon.png" height="30px" width="30px"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="#">About Us</a>
+      <a href="#">Events</a>
+      <a href="#">Join Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </nav>
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <header>
+    <div class="container">
+      <div class="wrapper">
+        <main class="ml15">
+          <h1 class="word">Hack-<b>X</b> Club</h1>
+        </main>
+        <main class="ml15">
+          <h6 class="word"><b>Cybersecurity</b><br><br> Club of MIT-WPU</h6>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </header>
+  <div class="middle-banner">
+    <section id="features">
+      <div class="container">
+        <div class="box-wrapper">
+          <div class="box col-md-4 col-lg-4 col-sm-6 col-xs-12">
+            <div class="icon"><i class="fa fa-file-image-o " aria-hidden="true"></i></div>
+            <div class="box-title">
+              <h2>Tech Lectures</h2>
+            </div>
+            <div class="box-description">
+              <p>Sed imperdiet ornare eros sit amet dapibus. Nulla mollis urna ac enim imperdiet euismod. Nulla in
+                rutrum
+                magna. Vestibulum a blandit metus. Aliquam nisl mi, ultrices sit amet consectetur vel, venenatis ut
+                lectus. Proin eget venenatis ante. Praesent et mattis sapien, eu mollis ex. Nullam nunc diam, suscipit
+                in
+                nisl.</p>
+            </div>
+          </div>
+          <div class="box col-md-4 col-lg-4 col-sm-6 col-xs-12">
+            <div class="icon"><i class="fa fa-file-image-o " aria-hidden="true"></i></div>
+            <div class="box-title">
+              <h2>CTF Events</h2>
+            </div>
+            <div class="box-description">
+              <p>Sed imperdiet ornare eros sit amet dapibus. Nulla mollis urna ac enim imperdiet euismod. Nulla in
+                rutrum
+                magna. Vestibulum a blandit metus. Aliquam nisl mi, ultrices sit amet consectetur vel, venenatis ut
+                lectus. Proin eget venenatis ante. Praesent et mattis sapien, eu mollis ex. Nullam nunc diam, suscipit
+                in
+                nisl.</p>
+            </div>
+          </div>
+          <div class="box col-md-4 col-lg-4 col-sm-6 col-xs-12">
+            <div class="icon"><i class="fa fa-file-image-o " aria-hidden="true"></i></div>
+            <div class="box-title">
+              <h2>Connect with tech minds</h2>
+            </div>
+            <div class="box-description">
+              <p>Sed imperdiet ornare eros sit amet dapibus. Nulla mollis urna ac enim imperdiet euismod. Nulla in
+                rutrum
+                magna. Vestibulum a blandit metus. Aliquam nisl mi, ultrices sit amet consectetur vel, venenatis ut
+                lectus. Proin eget venenatis ante. Praesent et mattis sapien, eu mollis ex. Nullam nunc diam, suscipit
+                in
+                nisl.</p>
+            </div>
           </div>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="intro-wrapper">
+        <h2 align="center">Who are we ?</h2>
+        <p align="center">” We are group of individuals who are looking to change the way students
+          think about Hacking ,<br>Not something negative , but something that people do
+          to create a safer<br> and more secure web experience while using technology .<br>
+          We at HACK-X CLUB learn How to Hack ethically and under the umbrella of the law. ”</p>
+      </div>
+    </div>
+
+    <div class="workshop">
+      <h1 style="color: aliceblue;" align="center">Workshops & Events</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-center">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/london.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>London</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.
+                          </p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/new-york.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>New York</h4>
+                          <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/paris.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Paris</h4>
+                          <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/kuala-lumpur.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Kuala Lumpur</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.
+                          </p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/agra.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Agra</h4>
+                          <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/dubai.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Dubai</h4>
+                          <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/rio-de-janeiro.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Rio De Janeiro</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.
+                          </p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/giza.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Giza</h4>
+                          <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/cities/sydney.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Sydney</h4>
+                          <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left" style="color: rgb(255, 0, 128);"></i>
+              </a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right" style="color: rgb(255, 0, 128);"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        
-        <div class="nav-links">
-          <a href="#">About Us</a>
-          <a href="#">Events</a>
-          <a href="#">Join Us</a>
-          <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      
+      
+    </div>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <a><img src="media/favicon.png" height="60px" alt="footer-logo"></a>
+        <br><br>
+        <p class="footer-links">
+          Designed & Developed By<br>
+          <a href="">Kanishk</a> & <a href="">Muhammad</a>
+        </p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>MIT-WPU</span> Pune, India</p>
         </div>
-        
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 7559235135</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="">info@hackxclub.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Follow Us !</span>
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
+  <script>anime.timeline({ loop: false })
+      .add({
+        targets: '.ml15 .word',
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+
+        delay: (el, i) => 800 * i
+      })
+      .add({
+        targets: '.ml15',
+
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    let progress = document.getElementById("progressbar");
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    };
+
+    (function () {
+      const header = document.querySelector(".header");
+      const icon = document.querySelector(".icon-container");
+      icon.onclick = function () {
+        header.classList.toggle("menu-open");
+      };
+    })();
+  </script>
 </body>
+
 </html>
