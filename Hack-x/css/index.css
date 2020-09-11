@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 	color: #efefef !important;
 	z-index: 1;
 }
-
+a { cursor: pointer !important; }
 .middle-banner {
 	background-color: #131313;
 	position: relative;
@@ -62,11 +63,11 @@ body {
 }
 
 .nav {
-	height: 50px;
+	height: 60px;
 	width: 100%;
 	background-color: #131313;
 	position: fixed;
-	z-index: 2;
+	z-index: 20000;
 }
 
 .nav>.nav-header {
@@ -75,7 +76,7 @@ body {
 
 .nav>.nav-header>.nav-title {
 	display: inline-block;
-	padding-top: 0.65em;
+	padding-top: 1em;
 	margin-left: 10px;
 }
 
@@ -108,9 +109,10 @@ body {
 @media (max-width:600px) {
 	.nav>.nav-btn {
 		display: inline-block;
-		position: absolute;
-		right: 0px;
-		top: 0px;
+		position:fixed;
+    right: 10px;
+    top:0px;
+		
 	}
 	.nav>.nav-btn>label {
 		display: inline-block;
@@ -120,7 +122,7 @@ body {
 	}
 	.nav>.nav-btn>label:hover,
 	.nav #nav-check:checked~.nav-btn>label {
-		background-color: rgb(0, 0, 0);
+		background-color: 131313;
 	}
 	.nav>.nav-btn>label>span {
 		display: block;
@@ -256,7 +258,7 @@ section#features .container {
 /* Footer */
 
 .footer-distributed {
-	background-color: #272727;
+	background-color: #292c2f;
   box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
 
 	box-sizing: border-box;
@@ -1624,3 +1626,19 @@ body {
 .next-arrow:after {
   content: "❯";
 }
+
+.footer-icons a.facebook:hover { background-color: #3b5998; }
+.footer-icons a.twitter:hover { background-color: #00acee; }
+.footer-icons a.linkedin:hover { background-color: #0e76a8; }
+.footer-icons a.github:hover { background-color: rgba(180, 171, 171, 0.37)}
+.footer-icons a.instagram:hover{ background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25); }
+
+.footer-icons a.facebook:active { background-color: #3b5998; }
+.footer-icons a.twitter:active { background-color: #00acee; }
+.footer-icons a.linkedin:active { background-color: #0e76a8; }
+.footer-icons a.github:active { background-color: rgba(180, 171, 171, 0.37)}
+.footer-icons a.instagram:active{ background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25); }
