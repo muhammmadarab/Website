@@ -256,8 +256,9 @@ section#features .container {
 /* Footer */
 
 .footer-distributed {
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	background-color: #272727;
+  box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
+
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -436,7 +437,7 @@ section#features .container {
 	align-items: center;
 	text-align: center;
 	border-radius: 20px;
-	box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+	box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
 	flex-wrap: wrap;
 	color: #f4f4f4;
 }
@@ -488,7 +489,8 @@ label {
 }
 
 .button:hover {
-	transform: scale(1.2);
+  transform: scale(1.2);
+  color: white;
 }
 
 .button1 {
@@ -498,7 +500,7 @@ label {
 
 .button2 {
 	background-color: #ff007c;
-	box-shadow: 0 0 10px 0 #ff007c inset, 0 0 20px 2px #ff007c;
+	box-shadow: 0 0 10px 0 #ff007b84 inset, 0 0 20px 2px #ff007b9a;
 }
 
 .button3 {
@@ -584,7 +586,8 @@ input:checked+.slider:before {
 	margin-top: 100px;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: #272727;
+  background: #272727;
+  box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
 	/* fallback for old browsers */
 	background: linear-gradient(to right, #1e1e1e, #252525);
 }
@@ -825,6 +828,7 @@ input:checked+.slider:before {
 /* Gallary */
 body {
   background: #333;
+  
 }
 
 /*----------------------------*\
