@@ -9,7 +9,7 @@
 
   <!-- title and favicon  -->
   <title>Hack-X Club</title>
-  <link rel="shortcut icon" type="image/ico" href="media/favicon.png" />
+  <link rel="shortcut icon" type="image/ico" href="./assets/img/logo/favicon.png" />
 
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,15 +17,14 @@
 
   <!-- fa fa-icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/bbbeb21210.js" crossorigin="anonymous"></script>
 
   <!-- custom css -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
 
-  <!-- script -->
-  <script src="https://kit.fontawesome.com/bbbeb21210.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -36,7 +35,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fw-bold position-fixed w-100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./"><img src="media/logo1.png" class="mh-100"></a>
+      <a class="navbar-brand cursor-pointer" href="./"><img src="assets/img/logo/logo.png" class="mh-100"></a>
       <svg viewBox="0 0 100 80" width="30" height="30" fill="#efefef" data-bs-toggle="collapse"
         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
         aria-label="Toggle navigation" id="navbar-toggler" class="me-2">
@@ -47,19 +46,19 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link cursor-pointer text-light" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#events">Events</a>
+            <a class="nav-link cursor-pointer text-light" href="#events">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
+            <a class="nav-link cursor-pointer text-light" href="#team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link cursor-pointer text-light" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link cursor-pointer text-light" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -77,9 +76,14 @@
         <h4 class="text text-uppercase"><b>Cybersecurity</b> <br> <br> Club of MIT-WPU</h4>
       </main>
       <br>
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <a class="btn btn-primary joinBtn text-uppercase" type="button" href="https://forms.gle/pqEbmyoU7sU4pE1h7">Join
-          us</a>
+      <div id="joinBtn" class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary text-uppercase" type="button" disabled>
+          Join us
+        </button>
+        <div class="invalid-feedback">
+          <h5>Recruitments are closed.</h5>
+          <h6>Follow our social medias to get updates of our next recruitment process.</h6>
+        </div>
       </div>
     </div>
   </header>
@@ -91,7 +95,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card bg-transparent">
             <div class="card-body">
-              <img src="media/png/png1.png" alt="lectures">
+              <img src="./assets/img/icons/png1.png" alt="lectures">
               <h5 class="card-title">Tech Lectures</h5>
               <p class="card-text">We deliver Tech Lectures. <br>We use trainers experienced in the field of
                 interest.<br>Join us and let's learn together.</p>
@@ -101,7 +105,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card bg-transparent">
             <div class="card-body">
-              <img src="media/png/png2.png" alt="CTF">
+              <img src="./assets/img/icons/png2.png" alt="CTF">
               <h5 class="card-title">CTF's & Events</h5>
               <p class="card-text">We Organize many Tech events like Capture the flag competetions, Events , Meetups
                 with top Cybersecurity Experts.</p>
@@ -111,7 +115,7 @@
         <div class="col-12 col-md-12 col-lg-4 mb-5">
           <div class="card bg-transparent">
             <div class="card-body">
-              <img src="media/png/png3.png" alt="Tech">
+              <img src="./assets/img/icons/png3.png" alt="Tech">
               <h5 class="card-title">Connect with tech minds</h5>
               <p class="card-text">Connect with different tech minds,<br> Learn together and grow together.</p>
             </div>
@@ -123,11 +127,12 @@
     <!-- about -->
     <section id="about" class="container-xl">
       <h2 class="text-center">What is Hack-X ?</h2>
-      <div class="container-xl my-5 py-4 rounded-3 vw-50 box-shadow">
-        <p class="text-center lh-lg">” We are group of individuals who are looking to change the way students
+      <div class="container-xl mt-5 py-4 rounded-3 vw-50 box-shadow">
+        <p class="text-center lh-lg">
+          We are group of individuals who are looking to change the way students
           think about Hacking ,<br>Not something negative , but something that people do
           to create a safer<br> and more secure web experience while using technology .<br>
-          We at HACK-X CLUB learn How to Hack ethically and under the umbrella of the law. ”
+          We at HACK-X CLUB learn How to Hack ethically and under the umbrella of the law.
         </p>
       </div>
     </section>
@@ -135,62 +140,66 @@
     <br>
 
     <!-- events -->
-    <section class="container mt-5 text-center" id="events">
-      <h3 class="my-5">Featured Workshops* & Events</h3>
+    <section class="container-fluid text-center" id="events">
+      <h3 class="my-5">Featured Workshops & Events</h3>
       <br>
-      <div class="container-fluid d-flex justify-content-center align-items-center flex-md-row flex-column">
-
-        <div class="package d-flex flex-column justify-content-center align-items-center m-3 p-3 w-25 rounded-3">
-          <h5 class="my-3">Secure Web Development</h5>
-          <img src="media/Workshop.jpg" alt="workshop_image" class="workshopImg rounded-3">
-          <ul class="text-start my-2">
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">2.5 hours / Day</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Starting from 15th August 2020</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Limited Seats Available</p>
-            </li>
-          </ul>
-          <a href="https://hackxsecurity.com/Online_Workshop/" class="btn btn-primary">Read More</a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-9 col-md-6 col-lg-3 package d-flex flex-column justify-content-center align-items-center m-3 p-3 rounded-3">
+            <h5 class="my-3">Cyberdisease 2K20</h5>
+            <video src="./assets/img/workshop/cyberdisease2020.mp4" class="workshopImg rounded-3 w-75" loop
+              autoplay></video>
+            <ul class="text-start my-2 text-info">
+              <li class="my-1 py-1">
+                <time class="fs-6 fst-normal">9 am onwards</time>
+              </li>
+              <li class="my-1 py-1">
+                <time id="cybertech" class="fs-6 fst-normal">Date: 30 Nov, 2020</time>
+              </li>
+              <li class="my-1 py-1">
+                <p class="fs-6 fst-normal">Status: &nbsp;<i class="text-danger">Registration Closed</i></p>
+              </li>
+            </ul>
+            <button class="btn btn-primary cursor-pointer w-75" disabled>Register</button>
+          </div>
+          <div
+            class="col-9 col-md-6 col-lg-3 package d-flex flex-column justify-content-center align-items-center m-3 p-3 rounded-3">
+            <h5 class="my-3">Hacktech 2K19</h5>
+            <video src="./assets/img/workshop/hacktech2019.mp4" class="workshopImg rounded-3 w-75" loop
+              autoplay></video>
+            <ul class="text-start my-2 text-info">
+              <li class="my-1 py-1">
+                <time class="fs-6 fst-normal">9 am onwards</time>
+              </li>
+              <li class="my-1 py-1">
+                <time id="cybertech" class="fs-6 fst-normal">Date: 26 Aug, 2019</time>
+              </li>
+              <li class="my-1 py-1">
+                <p class="fs-6 fst-normal">Status: &nbsp;<i class="text-danger">Registration Closed</i></p>
+              </li>
+            </ul>
+            <button class="btn btn-primary cursor-pointer w-75" disabled>Register</button>
+          </div>
+          <div
+            class="col-9 col-md-6 col-lg-3 package d-flex flex-column justify-content-center align-items-center m-3 p-3 rounded-3">
+            <h5 class="my-3">Hacktech 2K18</h5>
+            <video src="./assets/img/workshop/hacktech2018.mp4" class="workshopImg rounded-3 w-75" loop
+              autoplay></video>
+            <ul class="text-start my-2 text-info">
+              <li class="my-1 py-1">
+                <time class="fs-6 fst-normal">8:30 am onwards</time>
+              </li>
+              <li class="my-1 py-1">
+                <time id="cybertech" class="fs-6 fst-normal">Date: 31 Dec, 2018</time>
+              </li>
+              <li class="my-1 py-1">
+                <p class="fs-6 fst-normal">Status: &nbsp;<i class="text-danger">Registration Closed</i></p>
+              </li>
+            </ul>
+            <button class="btn btn-primary cursor-pointer w-75" disabled>Register</button>
+          </div>
         </div>
-
-        <div class="package d-flex flex-column justify-content-center align-items-center m-3 p-3 w-25 rounded-3">
-          <h5 class="my-3">Secure Web Development</h5>
-          <img src="media/Workshop.jpg" alt="workshop_image" class="workshopImg rounded-3">
-          <ul class="text-start my-2">
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">2.5 hours / Day</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Starting from 15th August 2020</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Limited Seats Available</p>
-            </li>
-          </ul>
-          <a href="https://hackxsecurity.com/Online_Workshop/" class="btn btn-primary">Read More</a>
-        </div>
-
-        <div class="package d-flex flex-column justify-content-center align-items-center m-3 p-3 w-25 rounded-3">
-          <h5 class="my-3">Secure Web Development</h5>
-          <img src="media/Workshop.jpg" alt="workshop_image" class="workshopImg rounded-3">
-          <ul class="text-start my-2">
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">2.5 hours / Day</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Starting from 15th August 2020</p>
-            </li>
-            <li class="my-1 py-1">
-              <p class="fs-6 fst-normal">Limited Seats Available</p>
-            </li>
-          </ul>
-          <a href="https://hackxsecurity.com/Online_Workshop/" class="btn btn-primary">Read More</a>
-        </div>
-
       </div>
     </section>
 
@@ -200,25 +209,25 @@
     <section id="stats" class="row text-center container-fluid my-5 py-5 box-shadow mx-auto">
       <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center flex-column">
         <i class="fa fa-tasks my-4 fs-1" style="color: rgb(255, 23, 120);"></i>
-        <h2 class="fs-1 my-1 fw-bold">5</h2>
+        <h2 class="fs-1 my-1 fw-bold count">5</h2>
         <div class="stats-line-black"></div>
         <p class="my-3 fs-6 text-uppercase fw-bold">Major Events</p>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center flex-column">
         <i class="fas fa-bug my-4 fs-1" style="color: rgb(255, 23, 120);"></i>
-        <h2 class="fs-1 my-1 fw-bold">100+</h2>
+        <h2 class="fs-1 my-1 fw-bold"><span class="count">100</span>+</h2>
         <div class="stats-line-black"></div>
         <p class="my-3 fs-6 text-uppercase fw-bold">Bugs Reported</p>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center flex-column">
         <i class="fa fa-clock-o my-4 fs-1" style="color: rgb(255, 23, 120);"></i>
-        <h2 class="fs-1 my-1 fw-bold">2</h2>
+        <h2 class="fs-1 my-1 fw-bold count">3</h2>
         <div class="stats-line-black"></div>
         <p class="my-3 fs-6 text-uppercase fw-bold">Years</p>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center flex-column">
         <i class="fas fa-users my-4 fs-1" style="color: rgb(255, 23, 120);"></i>
-        <h2 class="fs-1 my-1 fw-bold">20</h2>
+        <h2 class="fs-1 my-1 fw-bold count">45</h2>
         <div class="stats-line-black"></div>
         <p class="my-3 fs-6 text-uppercase fw-bold"> Members</p>
       </div>
@@ -229,141 +238,21 @@
     <!-- team -->
     <section id="team" class="mt-5">
       <div class="container-fluid box-shadow">
-        <h1 class="py-3 mt-5 text-center">Management</h1>
+        <h1 class="pt-5 mt-5 text-center">Management</h1>
         <div class="row my-3">
-          <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center my-3">
-            <img src="media/team/sir.jpg" alt="B.M. Patil Sir png" class="mt-3 py-3 pb-0 rounded-circle"
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center my-3">
+            <img src="./assets/img/team/sir.jpg" alt="B.M. Patil Sir" class="mt-3 py-3 pb-0 rounded-circle"
               style="height: 200px;">
             <div class="stats-line-black"></div>
             <p class="fs-6 my-4 text-center">Dr. B.M. Patil <br>(Faculty Advisor)<br> Associate HOS of CSE</p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center my-3">
-            <img src="media/team/yv.jpg" alt="B.M. Patil Sir png" class="mt-3 py-3 pb-0 rounded-circle"
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center my-3">
+            <img src="./assets/img/team/yv.jpg" alt="Yash Vyas" class="mt-3 py-3 pb-0 rounded-circle"
               style="height: 200px;">
             <div class="stats-line-black"></div>
             <p class="fs-6 my-4 text-center">Yash Vyas <br>Chairman & Founder</p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center my-3">
-            <img src="media/team/td.jpg" alt="B.M. Patil Sir png" class="mt-3 py-3 pb-0 rounded-circle"
-              style="height: 200px;">
-            <div class="stats-line-black"></div>
-            <p class="fs-6 my-4 text-center">Tanmay Dighe <br> Co-Founder</p>
-          </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h1 class="py-3 mt-5 text-center">Core Team Members</h1>
-        <div class="container">
-          <div class="row flex-center sm-no-flex">
-            <div class="pull-right sm-no-float col-md-8">
-              <ul class="team-members">
-                <!-- single member row starts -->
-                <li class="clearfix">
-                  <div class="member-details">
-                    <div>
-                      <img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png"
-                        alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                </li><!-- /single member row ends -->
-
-                <!-- single member row starts -->
-                <li class="clearfix">
-                  <div class="member-details">
-                    <div>
-                      <img src="https://axis.org/wp-content/uploads/2015/05/evan-headshot.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png"
-                        alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="https://axis.org/wp-content/uploads/2015/12/2015-Dougie-Headshot.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                </li><!-- /single member row ends -->
-
-                <!-- single member row starts -->
-                <li class="clearfix">
-                  <div class="member-details">
-                    <div>
-                      <img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png"
-                        alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="member-details">
-                    <div>
-                      <img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer">
-                      <div class="member-info">
-                        <h3>John Doe</h3>
-                        <p>UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul><!-- /end team-photos -->
-            </div><!-- /end col-md-8 -->
-          </div><!-- /end col-md-4 -->
-        </div><!-- /end row -->
-
       </div>
     </section>
 
@@ -372,15 +261,15 @@
       <h1 class="text-center mt-5">Gallery</h1>
       <div class="coverflow">
         <a class="prev-arrow"></a>
-        <a><img src="media/gallery/img1.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img2.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img3.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img5.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img4.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img6.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img7.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img8.jpg" class="coverflow__image" /></a>
-        <a><img src="media/gallery/img9.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img1.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img2.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img3.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img5.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img4.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img6.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img7.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img8.jpg" class="coverflow__image" /></a>
+        <a><img src="./assets/img/gallery/img9.jpg" class="coverflow__image" /></a>
         <a class="next-arrow"></a>
       </div>
     </section>
@@ -389,11 +278,12 @@
     <footer class="pt-3 position-absolute" style="width: 100%; left: 0;">
       <div class="row py-3">
         <div class="col-12 col-lg-6 px-5 d-flex flex-column flex-md-row justify-content-evenly align-items-center">
-          <a class="m-2 p-3 navbar-brand"><img src="media/logo1.png" style="height:60px" alt="footer-logo"></a>
+          <a class="m-2 p-3 navbar-brand"><img src="./assets/img/logo/logo.png" style="height:60px"
+              alt="footer-logo"></a>
           <div class="p-2 m-2 fw-bold">
             © Designed & Developed By<br>
-            <a href="https://www.muhammadarab.net.in" class="devLink">Muhammad</a> &
-            <a href="https://www.instagram.com/kanishk_7559" class="devLink">Kanishk</a>
+            <a href="https://www.muhammadarab.net.in" class="devLink cursor-pointer">Muhammad</a> &
+            <a href="https://www.instagram.com/kanishk_7559" class="devLink cursor-pointer">Kanishk</a>
           </div>
         </div>
 
@@ -401,23 +291,34 @@
           <div class="lh-lg">
             <i class="fa fa-map-marker"></i>&nbsp; <strong>MIT-WPU</strong> Pune, India
           </div>
-          <div class="lh-lg">
-            <i class="fa fa-phone"></i>&nbsp; +91-999-999-9999
-          </div>
-          <div class="lh-lg">
-            <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:hackxclubmitwpu@gmail.com"
-              style="color: cornflowerblue; text-decoration: none;" class="fw-bold">info@hackxclub.com</a>
+          <div class="lh-lg" id="mail">
+            <a href="mailto:hackxclubmitwpu@gmail.com" class="fw-bold text-decoration-none text-primary cursor-pointer">
+              <i class="fa fa-envelope"></i>&nbsp; info@hackxclub.com
+            </a>
           </div>
         </div>
 
         <hr>
 
         <div class="col-12 d-flex flex-row justify-content-center align-items-center">
-          <a class="facebook p-3 fs-4 socialLink mx-2 lh-1 " href="#"><i class="fa fa-facebook"></i></a>
-          <a class="instagram p-3 fs-4 socialLink mx-2 lh-1" href="#"><i class="fa fa-instagram"></i></a>
-          <a class="twitter p-3 fs-4 socialLink mx-2 lh-1" href="#"><i class="fa fa-twitter"></i></a>
-          <a class="linkedin p-3 fs-4 socialLink mx-2 lh-1" href="#"><i class="fa fa-linkedin"></i></a>
-          <a class="github p-3 fs-4 socialLink mx-2 lh-1" href="#"><i class="fa fa-github"></i></a>
+          <a class="p-3 fs-4 socialLink mx-2 lh-1 cursor-pointer" href="https://www.facebook.com/hackxclub"
+            target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="p-3 fs-4 socialLink mx-2 lh-1 cursor-pointer" href="https://www.instagram.com/hackxmitwpu/"
+            target="_blank">
+            <i class="fa fa-instagram"></i></a>
+          <a class="p-3 fs-4 socialLink mx-2 lh-1 cursor-pointer" href="#" target="_blank" hidden>
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="p-3 fs-4 socialLink mx-2 lh-1 cursor-pointer" href="https://www.linkedin.com/company/hack-x-club/"
+            target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="p-3 fs-4 socialLink mx-2 lh-1 cursor-pointer" href="https://github.com/Hack-X-MITWPU"
+            target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
         </div>
       </div>
     </footer>
@@ -432,6 +333,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <!-- custom js -->
-<script src="js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>

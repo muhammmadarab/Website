@@ -2,17 +2,9 @@
 let progress = document.getElementById("progressBar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function () {
-  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  let progressHeight = (window.pageYOffset / totalHeight) * 101;
   progress.style.height = progressHeight + "%";
 };
-
-// (function () {
-//   const header = document.querySelector(".header");
-//   const icon = document.querySelector(".icon-container");
-//   icon.onclick = function () {
-//     header.classList.toggle("menu-open");
-//   };
-// })();
 
 //header animation
 anime
@@ -34,6 +26,17 @@ anime
   });
 
 //counter
+$('.count').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+      duration: 1000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});
 
 //image gallery
 var a = document.getElementsByTagName("a");
