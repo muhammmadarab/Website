@@ -1,6 +1,3 @@
-/* team */
-@import url("./team.css");
-
 /* gallery */
 @import url("./gallery.css");
 
@@ -16,22 +13,25 @@ html {
 
 body {
   font-family: "segoe ui", sans-serif;
-  background-color: #131313;
+  background-color: #151515;
   color: #efefef;
   overflow-x: hidden;
 }
 
-a.btn {
+.cursor-pointer {
   cursor: pointer !important;
-  background-color: #ff0482;
+}
+
+.btn {
+  background-color: #ff0482 !important;
   border-radius: 25px;
   border: none;
   transition: 0.3s;
 }
 
 .box-shadow {
-  background: #272727;
-  box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
+  background: #161616;
+  box-shadow: 0 3px 10px rgb(0 0 0), 0 15px 12px rgb(30 35 33 / 20%);
 }
 
 /* progress bar */
@@ -77,8 +77,8 @@ a.btn {
 /* navbar */
 /* responsive: line 1 */
 nav.navbar {
-  background-color: #131313;
-  color: #efefef !important;
+  background-color: #111 !important;
+  box-shadow: 0px 10px 25px rgb(0, 0, 0);
   z-index: 9998;
   user-select: none;
 }
@@ -89,7 +89,6 @@ nav svg {
 
 a.navbar-brand img {
   height: 1.5em;
-  cursor: pointer;
 }
 
 a.navbar-brand img:hover {
@@ -101,8 +100,6 @@ a.navbar-brand img:hover {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #efefef !important;
-  cursor: pointer !important;
   margin: 10px;
 }
 
@@ -139,9 +136,13 @@ header {
   letter-spacing: 0.2em;
 }
 
+#joinBtn:hover .invalid-feedback {
+  display: block !important;
+}
+
 /* main content */
 .middle-banner {
-  background-color: #131313;
+  background-color: #151515;
   position: relative;
   z-index: 1;
   top: 600px;
@@ -167,16 +168,11 @@ section#features .card {
   margin: 20px auto;
 }
 
-/* about */
-/* section#about div.container-xl {
-  box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
-} */
-
 /* events */
 /* responsive: line 34 */
 .package {
-  background-color: #1e2321;
-  box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
+  background-color: #161616;
+  box-shadow: 0 7px 20px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2);
   color: #f4f4f4;
   min-width: 200px;
 }
@@ -199,24 +195,36 @@ section#features .card {
 }
 
 /* footer */
+footer {
+  background-color: #1f1f1f;
+}
+
 .devLink {
   color: #ff0482;
   text-decoration: none;
-  cursor: pointer !important;
 }
 
-footer {
-  background-color: #292c2f;
-  /* box-shadow: 0 19px 38px rgb(0, 0, 0), 0 15px 12px rgba(30, 35, 33, 0.2); */
+.fa-map-marker {
+  color: #ff0482;
+}
+
+.fa-envelope {
+  color: #ff0482;
+}
+
+#mail:hover {
+  transform: scale(1.1);
+}
+
+#mail:hover a {
+  color: #ff0482 !important;
 }
 
 .socialLink {
-  background-color: #33383b;
+  background-color: #2f2f2f;
   color: #fff;
-  cursor: pointer !important;
 }
 
 .socialLink:hover {
-  background-color: #33383b;
   color: #ff0482;
 }
