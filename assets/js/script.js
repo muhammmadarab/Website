@@ -3,6 +3,24 @@ $(window).ready(() => {
   setTimeout(() => {
     $("#loader").removeClass("d-flex").addClass("d-none");
     $("body").css("overflow-y", "scroll");
+    //header animation
+    anime
+      .timeline({ loop: false })
+      .add({
+        targets: ".introText .text",
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+
+        delay: (el, i) => 800 * i,
+      })
+      .add({
+        targets: ".introText",
+
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000,
+      });
   }, 3000);
 });
 
@@ -13,25 +31,6 @@ window.onscroll = function () {
   let progressHeight = (window.pageYOffset / totalHeight) * 101;
   progress.style.height = progressHeight + "%";
 };
-
-//header animation
-anime
-  .timeline({ loop: false })
-  .add({
-    targets: ".introText .text",
-    scale: [14, 1],
-    opacity: [0, 1],
-    easing: "easeOutCirc",
-
-    delay: (el, i) => 800 * i,
-  })
-  .add({
-    targets: ".introText",
-
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000,
-  });
 
 //counter
 let delayTime =
