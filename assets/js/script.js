@@ -2,6 +2,7 @@
 $(window).ready(() => {
   setTimeout(() => {
     $("#loader").removeClass("d-flex").addClass("d-none");
+    $("body").css("overflow-y", "scroll");
   }, 3000);
 });
 
