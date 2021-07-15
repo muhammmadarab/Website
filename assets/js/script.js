@@ -1,3 +1,8 @@
+// loader
+$(window).ready(()=> {
+  $("#loader").removeClass("d-flex").addClass("d-none")
+})
+
 //progress bar
 let progress = document.getElementById("progressBar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
