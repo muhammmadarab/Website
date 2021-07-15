@@ -26,16 +26,35 @@ anime
   });
 
 //counter
-$('.count').each(function () {
-  $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-  }, {
-      duration: 1000,
-      easing: 'swing',
-      step: function (now) {
-          $(this).text(Math.ceil(now));
-      }
-  });
+let delayTime =
+  200 +
+  $("#features").outerHeight(true) +
+  $("#about").outerHeight(true) +
+  $("#events").outerHeight(true);
+let flag = true;
+
+$(window).on("scroll", function () {
+  if (flag) {
+    if (window.pageYOffset > delayTime) {
+      $(".count").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 1000,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+      flag = false;
+    }
+  }
 });
 
 //image gallery
